@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>
+         {% block title %}
+         Title
+         {% endblock %}
+      </title>
+      <link rel="stylesheet" href="../styles.css">
+      <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> -->
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway&display=swap" rel="stylesheet">
+   <body>
+      <header>
+         <div class="header__logo">
+            <p>resume</p>
+         </div>
+         <nav>
+            <div class="topnav" id="myTopnav">
+               <a href="#">ГЛАВНАЯ</a>
+               <a href="#">О НАС</a>
+               <a href="#">ОБРАЗЦЫ РЕЗЮМЕ</a>
+               <a href="#">ИСТОРИЯ</a>
+               <a href="#">СОСТАВИТЬ РЕЗЮМЕ</a>
+               <a href="#">ВХОД</a>
+               <a href="#">РЕГИСТРАЦИЯ</a>
+               <a href="#" id="menu" class= "icon">&#9776;</a>
+            </div>
+         </nav>
+      </header>
+      <main>
+         <div class="main__welcome">
+            <h1>ДОБРО ПОЖАЛОВАТЬ <span class="welcome">В КОНСТРУКТОР РЕЗЮМЕ</span></h1>
+            <p>Мы поможем вам составить лучшее резюме!</p>
+         </div>
+         <div class="wrapper">
+            <div class="main__about">
+               <div class="about__left">
+                  <ul>
+                     <li>Бесплатная регистрация</li>
+                     <li>3 варианта оформления</li>
+                     <li>22 проф образца</li>
+                  </ul>
+                  <p>Вы сразу сможете распечатать готовое резюме или отправить работодателю.</p>
+                  <a href="#">Пример резюме 1</a><br>
+                  <a href="#">Пример резюме 2</a>
+               </div>
+               <div class="about__right">
+                  <h1>Профессиональное резюме - это просто!</h1>
+                  <p>Мы поможем составить правильное резюме и бесплатно разместить готовое резюме. Заполняйте по образцам резюме, примерам и 
+                     подсказкам чтобы получить резюме в высококачественном файле pdf (такое резюме красиво откроется на компьютере у всех кадровиков, 
+                     в отличие от формата MS word). <br>
+                     Используйте наш бесплатный конструктор резюме, чтобы создать образцовое резюме онлайн всего за несколько минут. <br>
+                     Получившееся резюме недоступно никому, кроме Вас. Вы сами решаете, кому отправить файл с резюме или ссылку на него.
+                  </p>
+                  <ul>
+                     <li>В вакансиях работодатели требуют резюме? Просто заполни по шаблону нужные поля и получи образцовое резюме.</li>
+                     <li>Бесплатно доступ для просмотра и редактирования с любого устройства!</li>
+                  </ul>
+                  <p>Грамотно составленное резюме отделит Вас от других соискателей с первого взгляда. Первое впечатление - 
+                     это очень важно для работодателя при отборе соискателей, поэтому созданное Вами резюме должно быть на высшем уровне. <br><br>
+                     Составь отличное резюме прямо сейчас! 
+                  </p>
+               </div>
+            </div>
+         </div>
+         <div class="examples__block">
+            <div class="wrapper"></div>
+                <h1>Образцы резюме по должностям</h1>
+                <div class="line"></div>
+                <p>Используйте готовые шаблоны по специальностям, 
+                чтобы составить своё профессиональное резюме за несколько минут. <br>
+                Добавьте свои данные и сразу скачивайте, печатайте и отправляйте ваше резюме!
+                </p>
+                <div class="columns__ex">
+                    <div class="example__left">
+                    <ul>
+                        <li>Водитель</li>
+                        <li>Стоматолог</li>
+                        <li>Программист</li>
+                    </ul>
+                    </div>
+                    <div class="example__center">
+                    <ul>
+                        <li>Строитель</li>
+                        <li>Стоматолог</li>
+                        <li>Программист</li>
+                    </ul>
+                    </div>
+                    <div class="example__right">
+                    <ul>
+                        <li>Учитель</li>
+                        <li>Стоматолог</li>
+                        <li>Программист</li>
+                    </ul>
+                    </div>
+                </div>
+            </div>
+         </div>
+
+         <div class="make__resume">
+             <div class="wrapper">
+             <h1>Составление резюме по шаблону и образцу прямо сейчас!</h1>
+             <p>Порадуй себя и будущего работодателя.</p>
+             <button type="submit"> СОСТАВИТЬ РЕЗЮМЕ </button>
+            </div>
+        </div>
+
+        <section class="registration">
+            <div class="contact__wrapper">
+                <div class="form__inputs">
+                    <form action="#" name = "newform" method="post">
+                        <div class="form__inputs__right">
+                            <h2>Есть аккаунт? <br><br> <span class="enter">Вход</span></h2>
+                            <p>Логин<span class="red">*</span></p>
+                            <input type="text" placeholder="Логин или e-mail" name="login_" required>
+                            <p>Пароль<span class="red">*</span></p>
+                            <input type="password" placeholder="Пароль" name="psw_" required>
+
+                    
+        
+                            <h2>Регистрация</h2>
+                            <p>Имя <span class="red">*</span></p>
+                            <input type="text" placeholder="Имя" name="name" required>
+                            <p>Фамилия <span class="red">*</span></p>
+                            <input type="text" placeholder="Фамилия" name="lastname" required>
+                            <p>Имя пользователя <span class="red">*</span></p>
+                            <input type="text" placeholder="Логин" name="login" required>
+                            <p>e-mail <span class="red">*</span></p>
+                            <input type="text" placeholder="Введите e-mail" name="email" required>
+                            <p>Пароль <span class="red">*</span></p>
+                            <input type="password" placeholder="Введите пароль" name="psw" required>
+                            <p>Повторите пароль <span class="red">*</span></p>
+                            <input type="password"  placeholder="Повторите пароль" name="psw-repeat" required>
+                        </div>
+                    
+
+                        
+                    </form>
+                </div>
+            </div>
+        </section>
+      </main>
+      <script src="script.js"></script>
+   </body>
+</html>
